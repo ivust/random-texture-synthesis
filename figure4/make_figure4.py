@@ -1,6 +1,6 @@
 import numpy as np
 import os
-import vgg_loss
+import ..vgg_loss
 import evaluate_quality as eq
 
 import matplotlib

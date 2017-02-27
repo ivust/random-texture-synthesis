@@ -148,7 +148,7 @@ def main(texture_file, texture_file_synthesised):
     IMAGE_W = 200
 
     net = build_vgg_model()
-    values = pickle.load(open('vgg19_normalized.pkl', 'rb'), encoding='latin1')['param values']
+    values = pickle.load(open('../vgg19_normalized.pkl', 'rb'), encoding='latin1')['param values']
     lasagne.layers.set_all_param_values(net['pool5'], values)
 
     loss = vgg_loss(texture_file, texture_file_synthesised, net)
