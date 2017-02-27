@@ -2,6 +2,7 @@
 Code for the ICLR 2017 paper [“What does it take to generate natural textures?”](https://openreview.net/forum?id=BJhZeLsxx)
 
 # How to run
+## Synthesising textures
 The main function is `synthesise.py`, which allows to synthesise textures using random shallow models described in the paper.
 
 Running
@@ -45,3 +46,12 @@ optional arguments:
 * `-c` is a number of feature maps per scale (i.e. for each filter size),
 * `--scales` are the sizes of convolutional filters (if not provided the multi-scale model is used by default with filters sizes 3, 5, 7, 11, 15, 23, 37, 55,
 * `-l` makes the model linear (no non-linearity after the conv layer is used).
+
+## Evaluating VGG-loss
+`vgg_loss.py` allows to evaluate the VGG-loss of a synthesised texture. Function `main` in this file takes two arguments: path to the reference texture and path to the synthesised one and return the value of the VGG-loss.
+
+```python
+import vgg_loss
+
+loss = vgg_loss.main('reference_texture.jpg', 'synthesised_texture.jpg')
+```
