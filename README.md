@@ -48,7 +48,7 @@ optional arguments:
 * `-l` makes the model linear (no non-linearity after the conv layer is used).
 
 ## Evaluating VGG-loss
-`vgg_loss.py` allows to evaluate the VGG-loss of a synthesised texture. Function `main` in this file takes two arguments: path to the reference texture and path to the synthesised one and return the value of the VGG-loss.
+`vgg_loss.py` allows to evaluate the VGG-loss of a synthesised texture. Function `main` in this file takes two arguments (path to the reference texture and path to the synthesised texture) and returns the value of the VGG-loss:
 
 ```python
 import vgg_loss
