@@ -38,4 +38,10 @@ optional arguments:
   -l, --linear          Use linear model (conv layer without non-linearity)
 ```
 
-`-t` is a path to a reference textures, `-s` is a size (in pixels) of a synthesised textures, `-f` is a filename of a synthesised texture (if not provided, by default `_synthesised.jpg` is added to the filename of the reference texture), `-n` is a number of L-BFGS optimisation steps (default 4000), `-c` is a number of feature maps per scale (i.e. for each filter size), `--scales` are the sizes of convolutional filters (if not provided the multi-scale model is used by default with filters sizes 3, 5, 7, 11, 15, 23, 37, 55, `-l` makes the model linear (no non-linearity after the conv layer is used).
+`-t` is a path to a reference textures,
+`-s` is a size (in pixels) of a synthesised textures,
+`-f` is a filename of a synthesised texture (if not provided, by default `_synthesised.jpg` is added to the filename of the reference texture),
+`-n` is a number of L-BFGS optimisation steps (default 4000),
+`-c` is a number of feature maps per scale (i.e. for each filter size),
+`--scales` are the sizes of convolutional filters (if not provided the multi-scale model is used by default with filters sizes 3, 5, 7, 11, 15, 23, 37, 55,
+`-l` makes the model linear (no non-linearity after the conv layer is used).
