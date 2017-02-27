@@ -57,4 +57,4 @@ loss = vgg_loss.main('reference_texture.jpg', 'synthesised_texture.jpg')
 ```
 
 # Figures
-Folders for respective figures contain code to generate these figures using the provided synthesised textures as well as the shell scripts `synthesise_figureN.sh` to generate new textures.
+Folders for respective figures contain code to generate these figures using the provided synthesised textures as well as the shell scripts (e.g. `synthesise_figure2.sh`) to generate new textures.
