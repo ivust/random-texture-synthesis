@@ -18,7 +18,7 @@ will synthesise a new texture using a single-scale model with 11x11 filters.
 Additional arguments to `synthesise.py` are as follows:
 
 ```
-python3 synthesise.py -h
+$ python3 synthesise.py -h
 
 usage: synthesise.py [-h] -t TEXTURE -s SIZE [-f TARGET_FILE] [-n N_ITER]
                      [-c N_FEATURES] [--scales [SCALES [SCALES ...]]] [-l]
